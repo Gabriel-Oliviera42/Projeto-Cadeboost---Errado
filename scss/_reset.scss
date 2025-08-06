@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--WHITE);
+    color: var(--BLACK-PRIMARY);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Road Rage", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--BLACK-PRIMARY);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.bnt-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--YELLOW);
+    transition: background-color .3s ease;
+    padding: 0.9rem 3.7rem 0.9rem 5.2rem;
+    &:hover {
+        background-color: var(--BLACK-PRIMARY);
+        span {
+            color: var(--WHITE);
+        }
+        img {
+            filter: invert(1);
+        }
+    }
+    span {
+        color: var(--BLACK-PRIMARY);
+        font-family: "Road Rage", sans-serif;
+        font-size: 4.6rem;
+        font-weight: 400;
+        letter-spacing: 2.3px;
+    }
+    img {
+        transition: filter .3s ease;
+    }
+    @media(max-width: 560px) {
+        padding: 1.1rem 3.6rem;
+        span {
+            font-size: 2.2rem;
+        }
+    }
+}
